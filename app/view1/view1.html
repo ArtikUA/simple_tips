@@ -1,0 +1,28 @@
+<table border="1" align="center">
+    <tr>
+        <td>Total tips</td>
+        <td><input type="number" ng-model="ctr.totalTips" ng-required="true" ng-change="ctr.recalculate();"></td>
+    </tr>
+    <tr>
+        <td>Total hours</td>
+        <td>{{ ctr.totalHours | number:2}}</td>
+    </tr>
+</table>
+<br>
+<table border="1" align="center">
+    <tr>
+        <td>Human</td>
+        <td>Hours</td>
+        <td>Portion</td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="human in ctr.humans">
+        <td><input type="text" ng-required="true" ng-model="human.name"></td>
+        <td><input type="number" ng-required="true" ng-change="ctr.recalculate()" ng-model="human.hours"></td>
+        <td>{{ human.hours * ctr.perHour | number:2}}</td>
+        <td><input type="button" value="delete" ng-click="ctr.removeHuman(human)"></td>
+    </tr>
+    <tr>
+        <td colspan="4"><input type="button" value="Add human" ng-click="ctr.addHuman()"></td>
+    </tr>
+</table>

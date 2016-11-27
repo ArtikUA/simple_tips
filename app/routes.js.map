@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "routes.js",
+  "sourceRoot": "",
+  "sources": [
+    "routes.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,GAAG,CAAC,MAAJ,CAAW,SAAC,cAAD;WACT,cAEE,CAAC,IAFH,CAEQ,GAFR,EAGI;MAAA,WAAA,EAAa,oCAAb;MACA,UAAA,EAAY,kBADZ;KAHJ,CAME,CAAC,IANH,CAMQ,mBANR,EAOI;MAAA,WAAA,EAAa,mCAAb;MACA,UAAA,EAAY,kBADZ;KAPJ;EADS,CAAX;AAAA"
+}
